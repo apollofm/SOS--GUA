@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+
 * {
   margin: -0px;
 }
 .boasvindas{
   margin-top: -340px;
-  margin-left: 310px;
-  font-size:115%;
+  margin-left: 50px;
+  font-size:100%;
 }
 .sobre {
   position: relative;
@@ -12,6 +21,7 @@
 }
 .BEMVINDO{
   text-indent: 50px;
+  margin-left: -50px;
 }
 .AO{
   text-indent: 170px;
@@ -20,27 +30,36 @@
   font-size: xx-large;
   
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+.descrição > h2 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: xx-large;
+  display: flex;
+  margin-left: 1000px;
+  margin-inline-end: 20px;
+  position: relative;
+  font-weight: 10px
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 .texto{
+  font-family: 'Noto Sans', sans-serif;
   margin-left: -80px;
   margin-inline-end: 20px;
   position: relative;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-h2 {
-  position: relative;
-  margin-top: -10px;
-  margin-left: 980px;
-  font-weight: 500;
-  font-size: xxx-large;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 10px
+  ;
 }
 
 h3 {
   position: relative;
   margin-top: 60px;
   margin-left: 910px;
-  font-weight: bold;
-  font-size: x-large;
+  font-size:large;
   text-align: end;
 }
 
@@ -61,7 +80,8 @@ body {
 
 .titulo {
   margin-right: 370px;
-  margin-top: -30px;
+  margin-left: 150px;
+  margin-top: -90px;
   text-align: center;
 
 }
@@ -78,6 +98,7 @@ body {
   left: 830px; 
   height: 30px; 
   width: 30px;
+  cursor: pointer;
 }
 .noticia{
   position: absolute;
@@ -87,12 +108,13 @@ body {
   width: 30px;
 }
 
-.login{
+.report{
   position: absolute;
   top: 45px; 
   left: 1080px; 
   height: 40px; 
   width: 40px;
+  cursor: pointer;
 }
 
 .formulario{
@@ -101,6 +123,7 @@ body {
   left: 1217px; 
   height: 40px; 
   width: 40px;
+  cursor: pointer;
 }
  
 p{
