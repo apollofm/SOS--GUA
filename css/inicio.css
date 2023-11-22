@@ -1,0 +1,114 @@
+* {
+  margin: -0px;
+}
+.boasvindas{
+  margin-top: -340px;
+  margin-left: 310px;
+  font-size:115%;
+}
+.sobre {
+  position: relative;
+  bottom: 750px;
+}
+.BEMVINDO{
+  text-indent: 50px;
+}
+.AO{
+  text-indent: 170px;
+  margin-top: 15px;
+  margin-left: 80px;
+  font-size: xx-large;
+  
+}
+.texto{
+  margin-left: -80px;
+  margin-inline-end: 20px;
+  position: relative;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2 {
+  position: relative;
+  margin-top: -10px;
+  margin-left: 980px;
+  font-weight: 500;
+  font-size: xxx-large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+  position: relative;
+  margin-top: 60px;
+  margin-left: 910px;
+  font-weight: bold;
+  font-size: x-large;
+  text-align: end;
+}
+
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+}
+
+
+
+.PE {
+
+  float: left;
+  margin-top: -130px;
+
+}
+
+.titulo {
+  margin-right: 370px;
+  margin-top: -30px;
+  text-align: center;
+
+}
+
+.triangulo-background {
+  margin-top: -115px;
+  width: 100%;
+  height: 250%;
+  background: linear-gradient(to top right, transparent 50%, rgb(29, 65, 224) 100%, rgb(32, 62, 230) 30%, transparent 20%);
+}
+.inicio{
+  position: absolute;
+  top: 50px; 
+  left: 830px; 
+  height: 30px; 
+  width: 30px;
+}
+.noticia{
+  position: absolute;
+  top: 50px; 
+  left: 950px; 
+  height: 30px; 
+  width: 30px;
+}
+
+.login{
+  position: absolute;
+  top: 45px; 
+  left: 1080px; 
+  height: 40px; 
+  width: 40px;
+}
+
+.formulario{
+  position: absolute;
+  top: 45px; 
+  left: 1217px; 
+  height: 40px; 
+  width: 40px;
+}
+ 
+p{
+  word-spacing: 70px;
+  font-size: 20px;
+  margin-left: 865px;
+  margin-top: 55px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+

@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: azure;
+    flex-direction: column;
+    /* Alinhe os elementos verticalmente */
+    position: relative;
+    /* Adicione essa linha para posicionamento relativo */
+}
+
+.mundo {
+    height: 500px;
+    width: 500px;
+    opacity: 15%;
+    margin-left: 500px;
+    margin-top: 70px;
+}
+
+.mapbox {
+    top: 100px;
+    left: 50px;
+    position: absolute;
+    height: 300px;
+    width: 700px;
+    background: azure;
+    border-radius: 20px;
+}
+
+.mapbox iframe {
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+}
+
+h1 {
+    position: absolute;
+    top: 40px;
+    left: 250px;
+    font-weight: 500;
+}
+.card {
+    position: absolute;
+    width: 260px;
+    background-color: rgba(32, 128, 218, 0.171);
+    border: 1px solid #ffffff;
+    border-radius: 7px;
+    box-shadow: 2px 10px 8px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 300px;
+    margin-left: 1060px;
+  }
+  
+  .chat-header {
+    opacity: 55%;
+    background-color:rgba(100, 153, 214, 0.678);
+    color: #ffffff;
+    padding: 10px;
+    font-size: 18px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .chat-window {
+    height: 220px;
+    overflow-y: scroll;
+  }
+  
+  .message-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ffffff;
+  }
+  
+  .message-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  
+  .send-button {
+    border: none;
+    outline: none;
+    background-color: rgba(61, 116, 129, 0.288);
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .send-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  }
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: -120px;
+    margin-right: 500px;
+}
+.carde {
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    background: rgba(32, 128, 218, 0.253);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    margin-top: -160px;
+    margin-right: 600px;
+  }
+  
+  .carde::before {
+    content: "";
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -40%;
+    left: -20%;
+    border-radius: 50%;
+    border: 35px solid rgba(36, 36, 36, 0.102);
+    transition: all .8s ease;
+    filter: blur(.5rem);
+  }
+  
+  .text {
+    flex-grow: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(240, 248, 255);
+    font-weight: 900;
+    font-size: 1.2em;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .subtitle {
+    font-size: .6em;
+    font-weight: 300;
+    color: rgba(240, 248, 255, 0.691);
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 400px; 
+    border-radius: 0px 0px 15px 15px;
+    overflow: hidden;
+  }
+  
+  .btn {
+    width: 140px; /* Aumenta a largura dos botões */
+    height: 35px;
+    background-color: rgba(247, 234, 234, 0.589);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .svg-icon {
+    width: 25px;
+    height: 25px;
+    stroke: rgb(100, 127, 214);
+  }
+  
+  .btn:hover {
+    background-color: rgb(247, 234, 234);
+  }
+  
+  .carde:hover::before {
+    width: 140px;
+    height: 140px;
+    top: -30%;
+    left: 50%;
+    filter: blur(0rem);
+  }
