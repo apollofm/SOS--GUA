@@ -19,32 +19,32 @@
         <div class="imagem-agua">
             <img src="IMAGENS/homem segurando torneira.png" alt="agua">
         </div>
-        <form class="form">
+        <form action="./BackEnd/Cadastro.php" method="POST" class="form">
             <p class="title">Registrar-se </p>
             <p class="message">Cadastre-se agora e tenha acesso total ao nosso site. </p>
             <div class="flex">
                 <label>
-                    <input required="" placeholder="" type="text" class="input">
+                    <input required="" placeholder="" name="nome" type="text" class="input">
                     <span>Primeiro nome</span>
                 </label>
 
                 <label>
-                    <input required="" placeholder="" type="text" class="input">
+                    <input required="" placeholder="" name="sobrenome" type="text" class="input">
                     <span>Ultimo nome</span>
                 </label>
             </div>
 
             <label>
-                <input required="" placeholder="" class="input">
+                <input required="" placeholder="" name="cpf" type="number" class="input">
                 <span>CPF</span>
             </label>
 
             <label>
-                <input required="" placeholder="" type="password" class="input">
+                <input required="" placeholder="" name="senha" id="password" type="password" class="input" required>
                 <span>Senha</span>
             </label>
             <label>
-                <input required="" placeholder="" type="password" class="input">
+                <input required="" placeholder="" name="confirmar" id="confirm_password" type="password" class="input" required>
                 <span>Confirmar Senha</span>
             </label>
             <button class="submit">Cadastrar-se</button>
@@ -52,6 +52,22 @@
         </form>
 
     </div>
+    <script>
+        var password = document.getElementById("password")
+      , confirm_password = document.getElementById("confirm_password");
+    
+    function validatePassword(){
+      if(password.value != confirm_password.value) {
+        confirm_password.setCustomValidity("Senhas diferentes!");
+      } else {
+        confirm_password.setCustomValidity('');
+      }
+    }
+    
+    password.onchange = validatePassword;
+    confirm_password.onkeyup = validatePassword;
+    
+    </script>
 </body>
 
 </html>
