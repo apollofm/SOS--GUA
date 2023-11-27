@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form SOS AGUA</title>
+
+    <script src="/javascript/functionform.js"></script>
+
+</head>
+
+<body>
+    <form action="/sumbit_form" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+
+        <label for="endereço">Endereço:</label>
+        <input type="text" id="endereço" name="endereço">
+        <br>
+
+        <label for="message">Problema:</label>
+        <div class="textarea">
+            <textarea id="message" name="message" rows="10" cols="50">
+          Descreva sobre o seu problema...
+        </textarea>
+            <br>
+
+            <label for="videoFile">Anexar arquivo:</label>
+            <input type="file" id="videoFile" name="videoFile" accept="video/*, image/*">
+            <br>
+
+            <label for="Enviar Report!">Enviar Report!</label>
+            <input type="submit" id="Enviar report!" value="OK">
+    </form>
+
+    <script src="/javascript/functionform.js"></script>
+
+</body>
+
+</html>
