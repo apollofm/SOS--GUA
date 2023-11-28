@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="Estilização (CSS)/cadastro.css">
     <link rel="shortcut icon" href="IMAGENS/favicon.png" type="image/x-icon">
     <title>Cadastro</title>
+
+    <script src="/SCRIPTS (JS)/functioncad.js"></script>
+
 </head>
 
 <body>
@@ -44,7 +47,8 @@
                 <span>Senha</span>
             </label>
             <label>
-                <input required="" placeholder="" name="confirmar" id="confirm_password" type="password" class="input" required>
+                <input required="" placeholder="" name="confirmar" id="confirm_password" type="password" class="input"
+                    required>
                 <span>Confirmar Senha</span>
             </label>
             <button class="submit">Cadastrar-se</button>
@@ -52,6 +56,8 @@
         </form>
 
     </div>
+
+    <!-- Código movido para o src="/SCRIPTS (JS)/functioncad.js/"
     <script>
         var password = document.getElementById("password")
       , confirm_password = document.getElementById("confirm_password");
@@ -68,6 +74,10 @@
     confirm_password.onkeyup = validatePassword;
     
     </script>
+    -->
+
+    <script src="/SCRIPTS (JS)/functioncad.js"></script>
+
 </body>
 
 </html>
