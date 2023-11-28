@@ -1,143 +1,184 @@
-*{margin: 0px;}
-
-.tudo{
-    margin-top: 100px;
-    margin-left: 0px;
+* {
+  margin: 0px;
 }
-.h1 { 
+
+body {
+  overflow: hidden;
+}
+
+.tudo {
+  position: static;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.h1 {
+  position: static;
   margin-right: 120px;
-    text-align: center;
-    margin-top: -190px;
+  text-align: center;
+  margin-top: -190px;
 }
 
 .imagem-agua {
-    transform: scaleX(-1); 
-    float: left;
-  margin-top: -90px;
+  position: static;
+  transform: scaleX(-1);
+  float: left;
+  margin-top: -100px;
+  margin-left: 50px;
 }
 
 .form_main {
-    border-radius: 8px;
-    width: 220px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    padding: 30px 30px 30px 30px;
-    box-shadow: -20px 30px 4px rgba(0, 0, 0, 0.062);
-    position: relative;
-    overflow: hidden;
-    left: 160px;
-    top: -60px;
-  }
-  
-  .form_main::before {
-    filter: blur(40px);
-    position: absolute;
-    content: "";
-    width: 500px;
-    height: 460px;
-    background-color: rgb(120, 140, 230);
-    transform: rotate(22deg);
-    left: 60px;
-    bottom: 160px;
-    z-index: 1;
-    border-radius:10px;
-    box-shadow: 40px 5px 1px rgba(0, 0, 0, 0.082);
-  }
-  
-  .heading {
-    font-size: 2em;
-    color: #423e3eb6;
-    font-weight: 700;
-    margin: 5px 0 10px 0;
-    z-index: 2;
-  }
-  
-  .inputContainer {
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-  }
-  
-  .inputIcon {
-    position: absolute;
-    left: 3px;
-  }
-  
-  .inputField {
-    width: 100%;
-    height: 30px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid rgb(173, 173, 173);
-    margin: 10px 0;
-    color: black;
-    font-size: .8em;
-    font-weight: 500;
-    box-sizing: border-box;
-    padding-left: 30px;
-  }
-  
-  .inputField:focus {
-    outline: none;
-    border-bottom: 2px solid rgb(111, 247, 240);
-  }
-  
-  .inputField::placeholder {
-    color: rgb(80, 80, 80);
-    font-size: 1em;
-    font-weight: 500;
-  }
-  
-  #button {
-    border-radius: 5px;
-    z-index: 2;
-    position: relative;
-    width: 100%;
-    border: none;
-    background-color: rgb(99, 122, 226);
-    height: 30px;
-    color: white;
-    font-size: .8em;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin: 10px;
-    cursor: pointer;
-  }
-  
-  #button:hover {
-    background-color: rgb(74, 83, 124);
-  }
-  
-  .forgotLink {
-    z-index: 2;
-    font-size: .7em;
-    font-weight: 500;
-    color: rgb(44, 24, 128);
-    text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 20px;
-  }
-  
-  .triangulo-background {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top right, transparent 50%, rgb(29, 65, 224) 100%, rgb(32, 62, 230) 30%, transparent 20%);
+  position: static;
+  border-radius: 8px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  padding: 30px 30px 30px 30px;
+  box-shadow: -30px 10px 8px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+  left: 100px;
+  top: -60px;
 }
 
-.sombra { 
-    filter: blur(12px);
-    width: 470px;
-    height: 10px;
-    background-color: black;
-    margin-left: 90px;
-    margin-top: 0px;
+.form_main::before {
+  position: static;
+  filter: blur(40px);
+  position: absolute;
+  content: "";
+  width: 500px;
+  height: 460px;
+  background-color: rgb(120, 140, 230);
+  transform: rotate(22deg);
+  left: 60px;
+  bottom: 160px;
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: 40px 5px 1px rgba(0, 0, 0, 0.82);
 }
 
-/*page 2*/
+.heading {
+  position: relative;
+  font-size: 2em;
+  color: royalblue;
+  font-weight: 700;
+  margin: 5px 0 10px 0;
+  z-index: 2;
+  top: 0px;
+  right: -15px;
+  display: flex;
+}
 
+.heading::before,
+.heading::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: -35px;
+  top: 10px;
+  background-color: royalblue;
+}
+
+.heading::before {
+  width: 18px;
+  height: 18px;
+  background-color: royalblue;
+}
+
+.heading::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.inputContainer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 3px;
+}
+
+.inputField {
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(173, 173, 173);
+  margin: 10px 0;
+  color: black;
+  font-size: .8em;
+  font-weight: 500;
+  box-sizing: border-box;
+  padding-left: 30px;
+}
+
+.inputField:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(111, 247, 240);
+}
+
+.inputField::placeholder {
+  color: rgb(80, 80, 80);
+  font-size: 1em;
+  font-weight: 500;
+}
+
+#button {
+  border-radius: 5px;
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  border: none;
+  background-color: rgb(99, 122, 226);
+  height: 30px;
+  color: white;
+  font-size: .8em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#button:hover {
+  background-color: rgb(74, 83, 124);
+}
+
+.forgotLink {
+  z-index: 2;
+  font-size: .7em;
+  font-weight: 500;
+  color: rgb(44, 24, 128);
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+.triangulo-background {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top right, transparent 50%, rgb(29, 65, 224) 100%, rgb(32, 62, 230) 30%, transparent 20%);
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
