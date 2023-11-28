@@ -51,13 +51,14 @@ body {
   content: "";
   width: 500px;
   height: 460px;
-  background-color: rgb(120, 140, 230);
-  transform: rotate(22deg);
+  background-color: #ffffff6c;
+  transform: 0px;
   left: 60px;
   bottom: 160px;
   z-index: 1;
   border-radius: 10px;
   box-shadow: 40px 5px 1px rgba(0, 0, 0, 0.82);
+  
 }
 
 .heading {

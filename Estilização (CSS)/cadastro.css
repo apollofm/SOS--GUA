@@ -97,12 +97,13 @@ body {
 .flex {
   display: flex;
   width: 100%;
-  gap: 6px;
+  gap: 40px;
 }
 
 .form label {
   position: relative;
 }
+
 
 .form label .input {
   width: 100%;
@@ -120,6 +121,7 @@ body {
   font-size: 0.9em;
   cursor: text;
   transition: 0.3s ease;
+  width: 100px;
 }
 
 .form label .input:placeholder-shown+span {
