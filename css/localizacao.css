@@ -14,6 +14,12 @@ body {
   /* Adicione essa linha para posicionamento relativo */
 }
 
+.backhome{
+  margin-left: 1000px;
+  margin-top: -150px;
+}
+
+
 .mundo {
   height: 500px;
   width: 500px;
@@ -29,13 +35,13 @@ body {
   height: 500px;
   width: 700px;
   background: azure;
-  border-radius: 20px;
+  border-radius: 100px;
 }
 
 .mapbox iframe {
   height: 100%;
   width: 100%;
-  border-radius: 1%;
+  border-radius: 5%;
 }
 
 
