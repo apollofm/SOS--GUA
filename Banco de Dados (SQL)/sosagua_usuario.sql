@@ -16,31 +16,30 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `problemas`
+-- Table structure for table `usuario`
 --
 
-DROP TABLE IF EXISTS `problemas`;
+DROP TABLE IF EXISTS `usuario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `problemas` (
+CREATE TABLE `usuario` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `endereco` varchar(50) NOT NULL,
-  `complemento` varchar(50) NOT NULL,
-  `numero` int NOT NULL,
-  `problema` varchar(255) NOT NULL,
-  `foto` varchar(255) NOT NULL,
+  `nome` varchar(50) NOT NULL,
+  `sobrenome` varchar(50) NOT NULL,
+  `cpf` varchar(50) NOT NULL,
+  `senha` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `problemas`
+-- Dumping data for table `usuario`
 --
 
-LOCK TABLES `problemas` WRITE;
-/*!40000 ALTER TABLE `problemas` DISABLE KEYS */;
-INSERT INTO `problemas` VALUES (1,'na casa de pai','BOLSONARO',22,'        ffffffffffffffff','46af147ce7740502d10e71a0debb5ce7.png'),(2,'wilton','BOLSONARO',22,'        juno ajeita essa lupa','189a20c8a99cf6cf9205fe2f897586d9.jpg');
-/*!40000 ALTER TABLE `problemas` ENABLE KEYS */;
+LOCK TABLES `usuario` WRITE;
+/*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
+INSERT INTO `usuario` VALUES (1,'123','22','123456','teste123'),(2,'WILTON','LINDO','123456789','teste');
+/*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
