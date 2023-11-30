@@ -149,8 +149,8 @@ body {
   height: 100px;
   width: 100px;
   position: absolute;
-  top: -40%;
-  left: -20%;
+  top: -60%;
+  left: -10%;
   border-radius: 50%;
   border: 35px solid rgba(36, 36, 36, 0.102);
   transition: all .8s ease;
@@ -207,7 +207,7 @@ body {
 .carde:hover::before {
   width: 140px;
   height: 140px;
-  top: -30%;
-  left: 50%;
+  top: 30%;
+  left: 60%;
   filter: blur(0rem);
 }
