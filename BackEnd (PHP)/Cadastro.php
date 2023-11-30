@@ -1,6 +1,6 @@
 <?php
 
-        require "config.php";
+        include "config.php";
 
         $nome = $_POST["nome"];
         $sobrenome = $_POST["sobrenome"];
@@ -10,7 +10,7 @@
         if(empty($nome) || empty($sobrenome) || empty($cpf) || empty($senha) ) {
                 echo "Preencha todos os campos!";
         } else {
-                $sql = "INSERT INTO cadastro(nome, sobrenome, cpf, senha) VALUES ('$nome', '$sobrenome', '$cpf', '$senha')";
+                $sql = "INSERT INTO usuario (nome, sobrenome, cpf, senha) VALUES ('$nome', '$sobrenome', '$cpf', '$senha')";
                 $result = mysqli_query($conn, $sql);
                 
                 $row = mysqli_affected_rows($conn);
