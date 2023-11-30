@@ -30,7 +30,7 @@ CREATE TABLE `problemas` (
   `problema` varchar(255) NOT NULL,
   `foto` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +39,7 @@ CREATE TABLE `problemas` (
 
 LOCK TABLES `problemas` WRITE;
 /*!40000 ALTER TABLE `problemas` DISABLE KEYS */;
-INSERT INTO `problemas` VALUES (1,'na casa de pai','BOLSONARO',22,'        ffffffffffffffff','46af147ce7740502d10e71a0debb5ce7.png');
+INSERT INTO `problemas` VALUES (1,'na casa de pai','BOLSONARO',22,'        ffffffffffffffff','46af147ce7740502d10e71a0debb5ce7.png'),(2,'wilton','BOLSONARO',22,'        juno ajeita essa lupa','189a20c8a99cf6cf9205fe2f897586d9.jpg');
 /*!40000 ALTER TABLE `problemas` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-11-29  0:13:50
+-- Dump completed on 2023-11-30  9:42:00
