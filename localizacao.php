@@ -65,27 +65,26 @@ include("BackEnd (PHP)/login/protect.php");
     <form action="BackEnd (PHP)/insercaoLocalizacao.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
 
       <label for="endereco">Endereço:</label>
-      <input type="text" id="endereco" name="endereco" pattern="[a-zA-Z\s.,;'-]+" title="Apenas texto é permitido">
+      <input type="text" id="endereco" name="endereco" pattern="[a-zA-Z\s.,;'-]+" title="Apenas texto é permitido" required>
       </input>
       <br>
 
       <label for="complemento">Complemento:</label>
-      <input type="text" id="complemento" name="complemento" pattern="[a-zA-Z\s.,;'-]+"
-        title="Apenas texto é permitido">
+      <input type="text" id="complemento" name="complemento" pattern="[a-zA-Z\s.,;'-]+" title="Apenas texto é permitido" required>
       </input>
 
       <label for="numero">Número:</label>
-      <input type="text" id="numero" name="numero" pattern="[0-9]+">
+      <input type="text" id="numero" name="numero" pattern="[0-9]+" required>
       </input>
       <br>
 
       <label for="message">Problema:</label>
-      <textarea id="problema" name="problema" rows="10" cols="50">
+      <textarea id="problema" name="problema" rows="10" cols="50" required>
         </textarea>
       <br>
 
       <label for="imagem">Anexar arquivo:</label>
-      <input type="file" id="foto" name="foto">
+      <input type="file" id="foto" name="foto" required>
       <br>
 
       <label for="Enviar Report!">Enviar Report!</label>

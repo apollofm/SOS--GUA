@@ -40,7 +40,7 @@
         $delete_id = $_POST['delete_id'];
 
         
-        $sql_delete = "DELETE FROM usuario WHERE id = $delete_id";
+        $sql_delete = "DELETE FROM problemas WHERE id = $delete_id";
 
         if ($conn->query($sql_delete) === TRUE) {
             echo "Registro excluído com sucesso!";
@@ -49,12 +49,12 @@
         }
     }
 
-        // Consulta SQL para obter os dados
+        
         $sql = "SELECT id, endereco, complemento, numero, Problema, foto FROM problemas";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
-            // Exibindo os dados na tabela
+            
             while ($row = $result->fetch_assoc()) {
                 echo "<tr>";
                 echo "<td>" . $row['id'] . "</td>";
