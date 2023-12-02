@@ -34,7 +34,7 @@
             header("Location: /SOS--GUA/localizacao.php");
 
         } else {
-            echo "Falha ao logar! E-mail ou senha incorretos ";
+            echo "Falha ao logar! CPF ou senha incorretos ";
         }
 
     }
